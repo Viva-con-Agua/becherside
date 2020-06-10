@@ -1,3 +1,6 @@
+{% set item = collections['index'][0] %}
+{% set subpath = item.data.subpath %}
+
 <div id="to_top">
   <a href="#"></a>
 </div>
@@ -6,14 +9,14 @@
   <ul class="container">
     {% for logo in collections.footer[0].data.logos %}
     <li>
-      <a href="{{logo.url}}" style="background-image: url(/assets/img/{{logo.icon}})"></a>
+      <a href="{{logo.url}}" style="background-image: url({{subpath}}assets/img/{{logo.icon}})"></a>
     </li>
     {% endfor %}
   </ul>
 </div>
 <footer id="_footer">
   <div class="container">
-    <span id="footer-logo" style="background-image: url(/assets/img/{{collections.footer[0].data.logo}})"></span>
+    <span id="footer-logo" style="background-image: url({{subpath}}assets/img/{{collections.footer[0].data.logo}})"></span>
     <div class="row">
       <div class="col-xl-9 col-md-12">
         <h3>About</h3>
@@ -24,43 +27,43 @@
         <h3>Kontakt</h3>
         <div id="contact">
           <div class="de">
-            <div class="flag full  show" style="background-image: url(/assets/img/{{collections.footer[0].data.icons[0]}})">
+            <div class="flag full  show" style="background-image: url({{subpath}}assets/img/{{collections.footer[0].data.icons[0]}})">
             </div>
             <div class="flag outline"
-              style="background-image: url(/assets/img/{{collections.footer[0].data.icons[1]}})"></div>
+              style="background-image: url({{subpath}}assets/img/{{collections.footer[0].data.icons[1]}})"></div>
           </div>
           <div class="icons de">
             <a href="{{collections.footer[0].data.links[0].mail}}"
-              style="background-image: url(/assets/img/mail.svg"></a>
-            <a href="{{collections.footer[0].data.links[0].fb}}" style="background-image: url(/assets/img/fb.svg"></a>
+              style="background-image: url({{subpath}}assets/img/mail.svg"></a>
+            <a href="{{collections.footer[0].data.links[0].fb}}" style="background-image: url({{subpath}}assets/img/fb.svg"></a>
             <a href="{{collections.footer[0].data.links[0].insta}}"
-              style="background-image: url(/assets/img/insta.svg"></a>
+              style="background-image: url({{subpath}}assets/img/insta.svg"></a>
           </div>
           <div class="at">
-            <div class="flag full show" style="background-image: url(/assets/img/{{collections.footer[0].data.icons[2]}})">
+            <div class="flag full show" style="background-image: url({{subpath}}assets/img/{{collections.footer[0].data.icons[2]}})">
             </div>
             <div class="flag outline"
-              style="background-image: url(/assets/img/{{collections.footer[0].data.icons[3]}})"></div>
+              style="background-image: url({{subpath}}assets/img/{{collections.footer[0].data.icons[3]}})"></div>
           </div>
           <div class="icons at">
             <a href="{{collections.footer[0].data.links[1].mail}}"
-              style="background-image: url(/assets/img/mail.svg"></a>
-            <a href="{{collections.footer[0].data.links[1].fb}}" style="background-image: url(/assets/img/fb.svg"></a>
+              style="background-image: url({{subpath}}assets/img/mail.svg"></a>
+            <a href="{{collections.footer[0].data.links[1].fb}}" style="background-image: url({{subpath}}assets/img/fb.svg"></a>
             <a href="{{collections.footer[0].data.links[1].insta}}"
-              style="background-image: url(/assets/img/insta.svg"></a>
+              style="background-image: url({{subpath}}assets/img/insta.svg"></a>
           </div>
           <div class="ch">
-            <div class="flag full show" style="background-image: url(/assets/img/{{collections.footer[0].data.icons[4]}})">
+            <div class="flag full show" style="background-image: url({{subpath}}assets/img/{{collections.footer[0].data.icons[4]}})">
             </div>
             <div class="flag outline"
-              style="background-image: url(/assets/img/{{collections.footer[0].data.icons[5]}})"></div>
+              style="background-image: url({{subpath}}assets/img/{{collections.footer[0].data.icons[5]}})"></div>
           </div>
           <div class="icons ch">
             <a href="{{collections.footer[0].data.links[2].mail}}"
-              style="background-image: url(/assets/img/mail.svg"></a>
-            <a href="{{collections.footer[0].data.links[2].fb}}" style="background-image: url(/assets/img/fb.svg"></a>
+              style="background-image: url({{subpath}}assets/img/mail.svg"></a>
+            <a href="{{collections.footer[0].data.links[2].fb}}" style="background-image: url({{subpath}}assets/img/fb.svg"></a>
             <a href="{{collections.footer[0].data.links[2].insta}}"
-              style="background-image: url(/assets/img/insta.svg"></a>
+              style="background-image: url({{subpath}}assets/img/insta.svg"></a>
           </div>
         </div>
       </div>
@@ -79,4 +82,4 @@
   </div>
 </footer>
 
-<script defer src="/assets/main.js"></script>
+<script defer src="{{subpath}}assets/main.js"></script>
