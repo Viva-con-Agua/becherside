@@ -1,0 +1,27 @@
+version: '3'
+services:
+    nginx-cup:
+        image: nginx
+        container_name: nginx-cup
+        restart: unless-stopped
+        volumes:
+            - ./routes/:/etc/nginx/conf.d/
+        ports:
+            - 80:80
+        networks:
+            cup-network:
+                ipv4_address: 172.4.20.1
+    
+    cup-side-default:
+        build: ./cupside/
+        container_name: cup-side-default
+        restart: unless-stopped
+        networks:
+            cup-network:
+                ipv4_address: 172.4.30.1
+networks:
+    cup-network:
+        ipam:
+            config:
+                - subnet: 172.4.0.0/16
+

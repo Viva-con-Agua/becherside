@@ -1,0 +1,8 @@
+
+###
+# cup-side upstreams
+##
+
+upstream cup-side-default {
+    server 172.4.30.1:80;
+}

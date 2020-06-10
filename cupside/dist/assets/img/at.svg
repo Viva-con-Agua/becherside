@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="41" viewBox="0 0 41 41">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Pfad_10111" data-name="Pfad 10111" d="M3111.009,2235.127a20.5,20.5,0,1,1-20.5,20.5,20.5,20.5,0,0,1,20.5-20.5Z" transform="translate(-3090.509 -2235.127)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Gruppe_1222" data-name="Gruppe 1222" transform="translate(-602 -3781)">
+    <g id="Gruppe_1220" data-name="Gruppe 1220">
+      <g id="Gruppe_1214" data-name="Gruppe 1214" transform="translate(602 3781)">
+        <path id="Pfad_10106" data-name="Pfad 10106" d="M3111.009,2235.127a20.5,20.5,0,1,1-20.5,20.5,20.5,20.5,0,0,1,20.5-20.5Z" transform="translate(-3090.509 -2235.127)" fill="#fff"/>
+        <g id="Gruppe_1213" data-name="Gruppe 1213" transform="translate(0)" clip-path="url(#clip-path)">
+          <path id="Pfad_10107" data-name="Pfad 10107" d="M3111.01,2235.172a20.5,20.5,0,1,1-20.5,20.5,20.5,20.5,0,0,1,20.5-20.5Z" transform="translate(-3090.51 -2235.162)" fill="#fff" fill-rule="evenodd"/>
+          <path id="Pfad_10108" data-name="Pfad 10108" d="M3028.313,2248.838h68.25v-13.667h-68.25v13.667Z" transform="translate(-3041.938 -2235.161)" fill="red" fill-rule="evenodd"/>
+          <path id="Pfad_10109" data-name="Pfad 10109" d="M3028.313,2311.224h68.25v-13.667h-68.25v13.667Z" transform="translate(-3041.938 -2283.881)" fill="#fff" fill-rule="evenodd"/>
+          <path id="Pfad_10110" data-name="Pfad 10110" d="M3028.313,2373.611h68.25v-13.667h-68.25v13.667Z" transform="translate(-3041.938 -2332.601)" fill="red" fill-rule="evenodd"/>
+        </g>
+        <path id="Pfad_10112" data-name="Pfad 10112" d="M3111.009,2235.127a20.5,20.5,0,1,1-20.5,20.5,20.5,20.5,0,0,1,20.5-20.5Z" transform="translate(-3090.509 -2235.127)" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

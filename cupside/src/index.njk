@@ -1,0 +1,67 @@
+{% extends '_layout.njk' %}
+
+{% set item = collections['index'][0] %}
+{% set title = item.data.title %}
+
+{% block header %}
+    {% if item.data.festival %}
+        {% include '_festival_header.njk' %}
+    {% else %}
+        {% include '_header.njk' %}
+    {% endif %}
+{% endblock header %}
+
+{% block content %}
+<div class="row" id="first">
+    <div class="col-sm-2 d-sm-block d-md-none"></div>
+    <img id="arrow_down" src="/assets/img/Pfeile_schwarz_Start.svg">  
+    <div id="text_1" class="col-md-12 col-xl-6">{{ item.data.text[0]['first'] | safe}}</div>
+    <picture id="first_img" class="col-md-12 col-xl-6" ><img src="/assets/img/{{item.data.pics[0].url}}"></picture>
+    <div id="splashes_color_top" style="background-image: url(/assets/img/Farb_Spritzer_Blau.svg"></div>
+</div> 
+<div class="row" id="second"  style="background-image: url(/assets/img/{{item.data.header_img}})">
+    <div id="splashes_2" style="background-image: url(/assets/img/{{item.data.splashes}})"></div>    
+    <picture id="second_img" class="col-md-12 col-xl-6"><img src="/assets/img/{{item.data.pics[1].url}}"></picture>
+    <div class="col-sm-2 d-sm-block d-md-none"></div>
+    <div id="text_2" class="col-md-12 col-xl-6">{{ item.data.text[1]['second'] | safe}}</div>
+    <div class="d-none d-xl-block col-xl-6"></div>
+    <div id="banner_1_wrapper" class="col-xl-6">
+        <div id="banner_1">
+            <img src="/assets/img/Spende_deinen_Becher.svg">
+            {% include '_banner_1.njk' %}
+        </div>
+    </div>
+    <img class="rings_front" src="/assets/img/ellipse_Ebene01.svg">
+    <img class="rings_back" src="/assets/img/ellipse_Ebene02.svg">
+    <div id="drop" style="background-image: url(/assets/img/Tropfen.svg"></div>
+    <div id="text_3" class="col-md-12 col-sm-10 d-xl-none">{{ item.data.text[2]['third'] | safe}}</div>
+</div>         
+<div class="row" id="third">
+    <div class="col-xl-1 d-none d-xl-block"></div>
+    <div id="text_3" class="col-xl-4 d-none d-xl-block">{{ item.data.text[2]['third'] | safe}}</div>
+    <div class="col-xl-1 d-none d-xl-block"></div>
+    <picture id="third_img" class="col-xl-6 col-md-12"><img src="/assets/img/{{item.data.pics[2].url}}"></picture>  
+    <div id="splashes_color" style="background-image: url(/assets/img/Farb_Spritzer_Blau.svg"></div>
+</div>  
+<div class="row" id="fourth">
+    <picture  id="fourth_img" class="col-xl-6 col-md-12"><img src="/assets/img/{{item.data.pics[3].url}}"></picture>   
+    <div id="banner_2_wrapper" class="col-xl-6 col-md-12">
+        <div id="banner_2">
+            <img src="/assets/img/Danke_fuer_die_Unterstuetzung.svg">
+            {% include '_banner_2.njk' %}
+        </div>
+    </div>
+</div>
+<div class="row" id="fith"  style="background-image: url(/assets/img/{{item.data.header_img}})">
+    <img id="bin_front" src="/assets/img/Tonne_Ebene01.svg">  
+    <img id="bin_back" src="/assets/img/Tonne_Ebene02.svg">  
+    <img id="arrows" src="/assets/img/Pfeile_Tonne.svg">
+    <img id="arrows_desktop" src="/assets/img/arrows_desktop.svg">
+    <div id="splashes_bin" style="background-image: url(/assets/img/{{item.data.splashes}})"></div>  
+</div>
+<div class="row" id="sixth">
+    <img id="placeholder" src="/assets/img/placeholder.png">  
+    <div id="form" class="m-auto col-xl-12">{{item.data.iframe | safe}}</div>
+</div>
+
+{% endblock content %}
