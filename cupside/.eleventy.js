@@ -55,6 +55,7 @@ module.exports = config =>  {
             input: "src",
             output: "dist",
         },
-        templateFormats: ["html","md", "njk"]
+        templateFormats: ["html","md", "njk"],
+        pathPrefix: "/cup/"
     }
 }

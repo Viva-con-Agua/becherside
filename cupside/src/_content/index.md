@@ -1,6 +1,6 @@
 ---
 title: VIVA con Agua
-subpath: /
+subpath: /cup/
 favicon: favicon.png
 logo: logo_black.svg
 heading: Spende_deinen_Becher_header.svg
