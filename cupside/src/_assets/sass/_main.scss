@@ -42,6 +42,7 @@ $grey: #363636;
             text-decoration: none;
         }
         @media screen and (max-width: 1199px){
+            picture,
             img {
                 max-width: 100%;
                 height: auto;
@@ -83,14 +84,21 @@ main {
         top: 20px;
         transform: translateX(-50%);
         height: 40px;
+        z-index: 2;
         @include contain();
         @media screen and (min-width: 1200px){
             left: auto;
             right: 0;
-            z-index: 2;
             top: 52px;
             transform: translateX(-50%);
             height: 76px;
+        }
+        &.festival {
+            @media screen and (max-width: 1199px){
+                top: 60px;
+                transform: translateX(-50%);
+                height: 80px; 
+            }
         }
     }
     #heading {
@@ -105,7 +113,8 @@ main {
             left: 13%;
         }
     }
-    #cup_start {
+    #cup_start,
+    #cup_start_festival {
         position: absolute;
         top: 310px;
         background-color: $light_blue;
@@ -121,6 +130,30 @@ main {
             width: 170px;
         }
     }
+    #cup_start_festival {
+        height: 240px;
+        width: 240px;
+        top: 204px;
+        background-color: $blue;
+        z-index: 0;
+        #heading_festival {
+            margin-top: 25px;
+            transform: scale(1.2);
+            width: 100%;
+            height: 100px;
+            @include contain();
+        }
+        @media screen and (min-width: 1200px){
+            top: 117px;
+            height: 300px;
+            width: 300px;
+            #heading_festival {
+                margin-top: 46px;
+                margin-left: 50%;
+                transform: translatex(-50%) scale(2);
+            }
+        }
+    }
     #splashes_header {
         height: 375px;
         width: 100%;
@@ -130,7 +163,19 @@ main {
         z-index: 1;
         @include cover();
         background-size: 600px;
-        background-repeat: space;        
+        background-repeat: space; 
+        &.festival {
+            background-position: 26px 36px;
+            transform: rotate(147deg);
+        }
+        @supports (-ms-ime-align:auto) {       
+            background-size: auto;
+            background-repeat: no-repeat;
+            background-position: 400px -50px; 
+            &.festival {
+                background-position: 400px -50px; 
+            }
+        }
     }
 }
 
@@ -139,13 +184,20 @@ main {
     top: 343px;
     width: 51px;
     height: auto;
-    transform: translateX(calc(-50% - 4px));
+    transform: translateX(calc(-50% - 25px));
     margin-left: 50%;
     z-index: 3;
     @include contain();
     @media screen and (min-width: 1200px){
+        transform: translateX(calc(-50% - 18px));
         top: 143px;
         width: 75px;
+    }
+    &.festival {
+        @media screen and (min-width: 1200px){
+            top: 288px;
+            width: 75px;
+        }
     }
 }
 
@@ -458,7 +510,7 @@ main {
     position: relative;
     margin-top: 0;
     height: calc(250px + 25vw);
-    margin-bottom: 15rem;
+    margin-bottom: 150px;
     border-bottom: 4px solid black;
     @include cover();
     @media screen and (max-width: 1199px) {
@@ -529,6 +581,24 @@ main {
     }
 }
 
+#festival_text {
+    margin-bottom: 100px;
+    span {
+        color: $blue;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-top: 330px
+    }
+    #festival-banner {
+        margin-top: 75px;
+        @media screen and (min-width: 1200px) {
+            margin-top:150px;
+            margin-bottom: 75px;
+            transform: scale(2);
+        }
+    }
+}
+
 #sixth {
     img { 
         height: auto;
@@ -541,12 +611,12 @@ main {
         width: calc(100vw - 50px);
         margin: auto;
         iframe {
-            /* border: none; */
+            border: none;
         }
         @media screen and (min-width: 1200px){
             width: 500px;
             iframe {
-                width: auto;
+                border: none;
             }
         }
     }
@@ -586,13 +656,13 @@ footer {
         @media screen and (min-width: 1200px){
             text-align: left;
         }
-        .col-md-9 {
+        .col-xl-9 {
             @media screen and (min-width: 1200px){
                 padding-right: 300px;
                 padding-left: 0;
             }
         }
-        .col-md-3 {
+        .col-xl-3 {
             padding-right: 0;
         }
         &:first-of-type {
@@ -707,4 +777,4 @@ footer {
             height: 66.666666667vw;
         }
     }
-}
+}

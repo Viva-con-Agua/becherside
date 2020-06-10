@@ -4,6 +4,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/png" href="/assets/img/favicon.png"/>
+        <script src=https://js.stripe.com/v3/ ></script>
+        <script src="https://www.paypal.com/sdk/js?client-id=AcZoPYe27lkRTq651m-q_3XFdv_kph3PEDpOUzdWZ3QNj7sBMi7dovF0N8fxQ69-G46kRqHPz4ThRo4V&disable-funding=credit,card,sepa,giropay,sofort&currency=EUR"></script>
+        <link href=https://stage.vivaconagua.org/widget/payment-widget/payment-widget.js rel=preload as=script>
+
         <title>{{ title }}</title>
         <style>
             @font-face {
@@ -23,9 +27,6 @@
     </head>
     <body>
         {% include '_nav.njk' %}
-        <div id="cup-wrapper">
-            <img id="cup" src="/assets/img/{{item.data.cup}}">
-        </div>
         <header id="_header" class="container-fluid">
             {% block header %}
             {% endblock %}

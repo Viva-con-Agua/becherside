@@ -11285,35 +11285,46 @@ var _jquery = _interopRequireDefault(require("jquery"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // Bootstrap JS and CSS
-var bin = (0, _jquery.default)('#bin_front'),
-    cup_wrapper = (0, _jquery.default)('#cup-wrapper');
-cup_wrapper.height(bin.offset().top);
-(0, _jquery.default)('#contact div.full').each(function () {
-  (0, _jquery.default)(this).one('click touch', function () {
-    (0, _jquery.default)('#contact div.full').removeClass('show');
-    (0, _jquery.default)('#contact div.outline').addClass('show');
-    (0, _jquery.default)(this).addClass('show');
-    (0, _jquery.default)(this).siblings().removeClass('show');
-    var current = '#contact .icons.' + (0, _jquery.default)(this).parent()[0].classList[0];
-    (0, _jquery.default)(current).addClass('show');
+(0, _jquery.default)(document).ready(function () {
+  var bin = (0, _jquery.default)('#bin_front'),
+      cup_wrapper = (0, _jquery.default)('#cup-wrapper'); // waiting for alle picture to load the set scroll wrapper height
+
+  Promise.all(Array.from(document.images).filter(function (img) {
+    return !img.complete;
+  }).map(function (img) {
+    return new Promise(function (resolve) {
+      img.onload = img.onerror = resolve;
+    });
+  })).then(function () {
+    cup_wrapper.height(bin.offset().top);
   });
-});
-(0, _jquery.default)('#contact div.outline').each(function () {
-  (0, _jquery.default)(this).on('click touch hover', function () {
-    (0, _jquery.default)('#contact div.full').removeClass('show');
-    (0, _jquery.default)('#contact div.icons').removeClass('show');
-    (0, _jquery.default)('#contact div.outline').addClass('show');
-    (0, _jquery.default)(this).removeClass('show');
-    (0, _jquery.default)(this).siblings().addClass('show');
-    var current = '#contact .icons.' + (0, _jquery.default)(this).parent()[0].classList[0];
-    (0, _jquery.default)(current).addClass('show');
+  (0, _jquery.default)('#contact div.full').each(function () {
+    (0, _jquery.default)(this).one('click touch', function () {
+      (0, _jquery.default)('#contact div.full').removeClass('show');
+      (0, _jquery.default)('#contact div.outline').addClass('show');
+      (0, _jquery.default)(this).addClass('show');
+      (0, _jquery.default)(this).siblings().removeClass('show');
+      var current = '#contact .icons.' + (0, _jquery.default)(this).parent()[0].classList[0];
+      (0, _jquery.default)(current).addClass('show');
+    });
   });
-});
-var docWidth = document.documentElement.offsetWidth;
-[].forEach.call(document.querySelectorAll('*'), function (el) {
-  if (el.offsetWidth > docWidth) {
-    console.log(el);
-  }
+  (0, _jquery.default)('#contact div.outline').each(function () {
+    (0, _jquery.default)(this).on('click touch hover', function () {
+      (0, _jquery.default)('#contact div.full').removeClass('show');
+      (0, _jquery.default)('#contact div.icons').removeClass('show');
+      (0, _jquery.default)('#contact div.outline').addClass('show');
+      (0, _jquery.default)(this).removeClass('show');
+      (0, _jquery.default)(this).siblings().addClass('show');
+      var current = '#contact .icons.' + (0, _jquery.default)(this).parent()[0].classList[0];
+      (0, _jquery.default)(current).addClass('show');
+    });
+  });
+  var docWidth = document.documentElement.offsetWidth;
+  [].forEach.call(document.querySelectorAll('*'), function (el) {
+    if (el.offsetWidth > docWidth) {
+      console.log(el);
+    }
+  });
 });
 },{"./../sass/_main.scss":"../sass/_main.scss","jquery":"../../../node_modules/jquery/dist/jquery.js"}],"../../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -11343,7 +11354,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45691" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38767" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

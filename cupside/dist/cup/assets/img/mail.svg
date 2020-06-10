@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41">
+  <g id="Gruppe_1280" data-name="Gruppe 1280" transform="translate(-114 -3844)">
+    <g id="Ellipse_356" data-name="Ellipse 356" transform="translate(114 3844)" fill="#fff" stroke="#707070" stroke-width="1" opacity="0.111">
+      <circle cx="20.5" cy="20.5" r="20.5" stroke="none"/>
+      <circle cx="20.5" cy="20.5" r="20" fill="none"/>
+    </g>
+    <g id="Pfad_4907" data-name="Pfad 4907" transform="translate(124.09 3856.972)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M0,0H20.267V14.477H0Z" stroke="none"/>
+      <path d="M 1.999998092651367 1.999998092651367 L 1.999998092651367 12.47659873962402 L 18.26723670959473 12.47659873962402 L 18.26723670959473 1.999998092651367 L 1.999998092651367 1.999998092651367 M -1.9073486328125e-06 -1.9073486328125e-06 L 20.26723670959473 -1.9073486328125e-06 L 20.26723670959473 14.47659873962402 L -1.9073486328125e-06 14.47659873962402 L -1.9073486328125e-06 -1.9073486328125e-06 Z" stroke="none" fill="#fff"/>
+    </g>
+    <path id="Pfad_4908" data-name="Pfad 4908" d="M1826.5,4334.556l8.827,6.251,9.083-6.251" transform="translate(-1701.408 -476.13)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>

@@ -14,15 +14,16 @@ icons:
 logo: footer_logo.svg
 links: 
 - de: 
-  insta: https://instagram.com
-  fb: https://instagram.com
-  mail: mailto:test@example.com
+  insta: https://www.instagram.com/vivaconagua/
+  fb: https://www.facebook.com/vivaconagua
+  mail: mailto:action@vivaconagua.org
 - at: 
-  insta: https://instagram.com
-  fb: https://instagram.com
-  mail: mailto:test@example.com
+  insta: https://www.instagram.com/vivaconagua_oesterreich/
+  fb: https://www.facebook.com/vivaconaguaoesterreich/
+  mail: mailto:action@vivaconagua.org
 - ch: 
-  insta: https://instagram.com
-  fb: https://instagram.com
-  mail: mailto:test@example.com
+  insta: https://www.instagram.com/vivaconagua_ch/
+  fb: https://www.facebook.com/vivaconaguaschweiz/
+  mail: mailto:action@vivaconagua.org
 ---
+
