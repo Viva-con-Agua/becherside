@@ -10,7 +10,7 @@ festival_text: <span>Nova Rock</span> unterstützt die Wasserprojekte  von Viva 
 header_img: background_big.jpg
 banner_color: 0a6b91
 cup: cup.svg
-iframe: <iframe src=https://pool2.vivaconagua.org/widget/payment-widget/cup-side-default-ch/ width=700 height=2000 ></iframe>
+iframe: <iframe src=https://pool2.vivaconagua.org/widget/payment-widget/cup-side-default-ch/ width=700 height=2750 ></iframe>
 text: 
 - first: <span>So schön wärs gewesen:</span>
         Sonne, Musik, tanzen und<br>feiern bis zum Morgen ...
