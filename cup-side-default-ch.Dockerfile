@@ -1,13 +1,15 @@
 FROM node as build-stage
+ENV site cup-side-default-ch
 
 # make the 'app' folder the current working directory
 WORKDIR /app
 
-
-ADD ../../cupside /app
 # copy both 'package.json' and 'package-lock.json' (if available)
 
-COPY . .
+COPY ./cupsite/. .
+COPY ./sides/${site}/index.md ./src/_content/index.md
+COPY ./sides/${site}/footer.md ./src/_content/footer.md
+
 # install project dependencies
 RUN npm install
 
