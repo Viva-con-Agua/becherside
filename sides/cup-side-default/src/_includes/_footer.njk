@@ -1,0 +1,85 @@
+{% set item = collections['index'][0] %}
+{% set subpath = item.data.subpath %}
+
+<div id="to_top">
+  <a href="#"></a>
+</div>
+
+<div id="logos">
+  <ul class="container">
+    {% for logo in collections.footer[0].data.logos %}
+    <li>
+      <a href="{{logo.url}}" style="background-image: url({{subpath}}assets/img/{{logo.icon}})"></a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+<footer id="_footer">
+  <div class="container">
+    <span id="footer-logo" style="background-image: url({{subpath}}assets/img/{{collections.footer[0].data.logo}})"></span>
+    <div class="row">
+      <div class="col-xl-9 col-md-12">
+        <h3>About</h3>
+        <p>{{collections.footer[0].data.about_text }}</p>
+      </div>
+      <div class="col-3 d-md-block d-xs-block d-xl-none"></div>
+      <div class="col-xl-3 col-md-6">
+        <h3>Kontakt</h3>
+        <div id="contact">
+          <div class="de">
+            <div class="flag full  show" style="background-image: url({{subpath}}assets/img/{{collections.footer[0].data.icons[0]}})">
+            </div>
+            <div class="flag outline"
+              style="background-image: url({{subpath}}assets/img/{{collections.footer[0].data.icons[1]}})"></div>
+          </div>
+          <div class="icons de">
+            <a href="{{collections.footer[0].data.links[0].mail}}"
+              style="background-image: url({{subpath}}assets/img/mail.svg"></a>
+            <a href="{{collections.footer[0].data.links[0].fb}}" style="background-image: url({{subpath}}assets/img/fb.svg"></a>
+            <a href="{{collections.footer[0].data.links[0].insta}}"
+              style="background-image: url({{subpath}}assets/img/insta.svg"></a>
+          </div>
+          <div class="at">
+            <div class="flag full show" style="background-image: url({{subpath}}assets/img/{{collections.footer[0].data.icons[2]}})">
+            </div>
+            <div class="flag outline"
+              style="background-image: url({{subpath}}assets/img/{{collections.footer[0].data.icons[3]}})"></div>
+          </div>
+          <div class="icons at">
+            <a href="{{collections.footer[0].data.links[1].mail}}"
+              style="background-image: url({{subpath}}assets/img/mail.svg"></a>
+            <a href="{{collections.footer[0].data.links[1].fb}}" style="background-image: url({{subpath}}assets/img/fb.svg"></a>
+            <a href="{{collections.footer[0].data.links[1].insta}}"
+              style="background-image: url({{subpath}}assets/img/insta.svg"></a>
+          </div>
+          <div class="ch">
+            <div class="flag full show" style="background-image: url({{subpath}}assets/img/{{collections.footer[0].data.icons[4]}})">
+            </div>
+            <div class="flag outline"
+              style="background-image: url({{subpath}}assets/img/{{collections.footer[0].data.icons[5]}})"></div>
+          </div>
+          <div class="icons ch">
+            <a href="{{collections.footer[0].data.links[2].mail}}"
+              style="background-image: url({{subpath}}assets/img/mail.svg"></a>
+            <a href="{{collections.footer[0].data.links[2].fb}}" style="background-image: url({{subpath}}assets/img/fb.svg"></a>
+            <a href="{{collections.footer[0].data.links[2].insta}}"
+              style="background-image: url({{subpath}}assets/img/insta.svg"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <ul id="footer-links" class="col-md-9 col-sm-12">
+        <li>
+          <a href="{{collections.footer[0].data.privacy_link}}">Datenschutzhinweis</a>
+        </li>
+        <li>
+          <a href="{{collections.footer[0].data.imprint_link}}">Impressum</a>
+        <li>
+      </ul>
+      <div id="copyright" class="col-md-3 col-sm-12">&copy;{{collections.footer[0].data.copyright}}</div>
+    </div>
+  </div>
+</footer>
+
+<script defer src="{{subpath}}assets/main.js"></script>
