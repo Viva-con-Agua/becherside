@@ -30,7 +30,9 @@ services:
                 ipv4_address: 172.2.30.2
     
     cup-side-default-ch:
-        build: ./sides/cup-side-default-ch
+        build:
+            context: .
+            dockerfile: cup-side-default-ch.Dockerfile
         container_name: cup-side-default-ch
         restart: unless-stopped
         networks:
