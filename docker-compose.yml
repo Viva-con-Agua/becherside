@@ -28,6 +28,25 @@ services:
         networks:
             default:
                 ipv4_address: 172.2.30.2
+    cup-side-maeckes:
+        build: 
+            context: .
+            dockerfile: cup-side-maeckes.Dockerfile
+        container_name: cup-side-maeckes
+        restart: unless-stopped
+        networks:
+            default:
+                ipv4_address: 172.2.30.3
+    
+    cup-side-okkid:
+        build: 
+            context: .
+            dockerfile: cup-side-okkid.Dockerfile
+        container_name: cup-side-okkid
+        restart: unless-stopped
+        networks:
+            default:
+                ipv4_address: 172.2.30.4
     
     cup-side-default-ch:
         build:
@@ -38,6 +57,16 @@ services:
         networks:
             default:
                 ipv4_address: 172.2.35.2
+    cup-side-oberrieden:
+        build:
+            context: .
+            dockerfile: cup-side-oberrieden.Dockerfile
+        container_name: cup-side-oberrieden
+        restart: unless-stopped
+        networks:
+            default:
+                ipv4_address: 172.2.35.3
+
 
 networks:
     default:

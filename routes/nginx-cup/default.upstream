@@ -6,3 +6,9 @@
 upstream cup-side-default {
     server 172.2.30.2:80;
 }
+upstream cup-side-maeckes {
+    server 172.2.30.3:80;
+}
+upstream cup-side-okkid {
+    server 172.2.30.4:80;
+}

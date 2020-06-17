@@ -1,5 +1,5 @@
 ---
-title: VIVA con Agua
+title: Viva con Agua
 subpath: /
 favicon: favicon.png
 logo: logo_black.svg
@@ -15,7 +15,7 @@ text:
 - first: <span>So schön wärs gewesen:</span>
         Sonne, Musik, tanzen und<br>feiern bis zum Morgen ...
 - second: ... und ganz nebenbei Gutes tun.
-- third: Wird verwandeln deinen leeren Becher in sauberes Trinkwasser
+- third: Wir verwandeln deinen leeren Becher in sauberes Trinkwasser
 pics: 
 - title: Pic_1
   url: Bild01_900x600.jpg

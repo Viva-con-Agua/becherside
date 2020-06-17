@@ -6,3 +6,7 @@
 upstream cup-side-default {
     server 172.2.35.2:80;
 }
+
+upstream cup-side-oberrieden {
+    server 172.2.35.3:80;
+}
