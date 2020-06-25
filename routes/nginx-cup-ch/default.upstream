@@ -10,3 +10,12 @@ upstream cup-side-default {
 upstream cup-side-oberrieden {
     server 172.2.35.3:80;
 }
+
+upstream cup-side-bsides {
+    server 172.2.35.4:80;
+}
+
+upstream cup-side-oasg {
+    server 172.2.35.5:80;
+}
+

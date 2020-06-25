@@ -7,14 +7,14 @@ heading: Spende_deinen_Becher_header.svg
 splashes: splashes.svg
 festival: true
 festival_text: <span>OK KID</span> unterstützt die Wasserprojekte von Viva con Agua
-header_img: header_okkid.jpg
-banner_color: 2b3d42
+header_img: header_black.jpg
+banner_color: 000000
 cup: cup.svg
 iframe: <iframe src=https://pool2.vivaconagua.org/widget/payment-widget/cup-side-okkid/ width=500 height=1000 ></iframe>
 text: 
 - first: <span>So schön wärs gewesen:</span>
         Sonne, Musik, tanzen und<br>feiern bis zum Morgen ...
-- second: ... und ganz nebenbei Gutes tun.
+- second: ... und ganz<br/>nebenbei Gutes tun.
 - third: Viva con Agua verwandelt deinen leeren Becher in sauberes Trinkwasser
 pics: 
 - title: Pic_1

@@ -14,7 +14,7 @@ iframe: <iframe src=https://pool2.vivaconagua.org/widget/payment-widget/cup-side
 text: 
 - first: <span>So schön wärs gewesen:</span>
         Sonne, Musik, tanzen und<br>feiern bis zum Morgen ...
-- second: ... und ganz nebenbei Gutes tun.
+- second: ... und ganz<br/>nebenbei Gutes tun.
 - third: Viva con Agua verwandelt deinen leeren Becher in sauberes Trinkwasser
 pics: 
 - title: Pic_1

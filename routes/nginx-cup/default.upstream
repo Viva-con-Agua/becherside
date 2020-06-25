@@ -12,3 +12,66 @@ upstream cup-side-maeckes {
 upstream cup-side-okkid {
     server 172.2.30.4:80;
 }
+upstream cup-side-hurricane {
+    server 172.2.30.5:80;
+}
+upstream cup-side-southside {
+    server 172.2.30.6:80;
+}
+
+upstream cup-side-turmstrasse {
+    server 172.2.30.7:80;
+}
+
+upstream cup-side-kitschkrieg {
+    server 172.2.30.8:80;
+}
+
+upstream cup-side-sdp {
+    server 172.2.30.9:80;
+}
+
+upstream cup-side-deichbrand {
+    server 172.2.30.10:80;
+}
+
+upstream cup-side-samy-deluxe {
+    server 172.2.30.11:80;
+}
+
+upstream cup-side-fettes-brot {
+    server 172.2.30.12:80;
+}
+
+upstream cup-side-milky-chance {
+    server 172.2.30.13:80;
+}
+
+upstream cup-side-lola-weippert {
+    server 172.2.30.14:80;
+}
+
+upstream cup-side-gentleman {
+    server 172.2.30.15:80;
+}
+
+upstream cup-side-kelvyn-colt {
+    server 172.2.30.16:80;
+}
+
+upstream cup-side-majan {
+    server 172.2.30.17:80;
+}
+
+upstream cup-side-megaloh {
+    server 172.2.30.18:80;
+}
+
+upstream cup-side-sara-lugo {
+    server 172.2.30.19:80;
+}
+
+upstream cup-side-seeed {
+    server 172.2.30.20:80;
+}
+

@@ -1,5 +1,6 @@
 version: '3'
 services:
+
     nginx-cup:
         image: nginx
         container_name: nginx-cup
@@ -9,6 +10,7 @@ services:
         networks:
             default:
                 ipv4_address: 172.2.30.1
+
     nginx-cup-ch:
         image: nginx
         container_name: nginx-cup-ch
@@ -48,6 +50,166 @@ services:
             default:
                 ipv4_address: 172.2.30.4
     
+    cup-side-hurricane:
+        build: 
+            context: .
+            dockerfile: cup-side-hurricane.Dockerfile
+        container_name: cup-side-hurricane
+        restart: unless-stopped
+        networks:
+            default:
+                ipv4_address: 172.2.30.5
+
+    cup-side-southside:
+        build: 
+            context: .
+            dockerfile: cup-side-southside.Dockerfile
+        container_name: cup-side-southside
+        restart: unless-stopped
+        networks:
+            default:
+                ipv4_address: 172.2.30.6
+    
+    cup-side-turmstrasse:
+        build: 
+            context: .
+            dockerfile: cup-side-turmstrasse.Dockerfile
+        container_name: cup-side-turmstrasse
+        restart: unless-stopped
+        networks:
+            default:
+                ipv4_address: 172.2.30.7
+    
+    cup-side-kitschkrieg:
+        build: 
+            context: .
+            dockerfile: cup-side-kitschkrieg.Dockerfile
+        container_name: cup-side-kitschkrieg
+        restart: unless-stopped
+        networks:
+            default:
+                ipv4_address: 172.2.30.8
+   
+    cup-side-sdp:
+        build: 
+            context: .
+            dockerfile: cup-side-sdp.Dockerfile
+        container_name: cup-side-sdp
+        restart: unless-stopped
+        networks:
+            default:
+                ipv4_address: 172.2.30.9
+
+    cup-side-deichbrand:
+        build:
+            context: .
+            dockerfile: cup-side-deichbrand.Dockerfile
+        container_name: cup-side-deichbrand
+        restart: unless-stopped
+        networks:
+            default:
+                ipv4_address: 172.2.30.10
+
+    cup-side-samy-deluxe:
+        build:
+            context: .
+            dockerfile: cup-side-samy-deluxe.Dockerfile
+        container_name: cup-side-samy-deluxe
+        restart: unless-stopped
+        networks:
+            default:
+                ipv4_address: 172.2.30.11
+
+    cup-side-fettes-brot:
+        build:
+            context: .
+            dockerfile: cup-side-fettes-brot.Dockerfile
+        container_name: cup-side-fettes-brot
+        restart: unless-stopped
+        networks:
+            default:
+                ipv4_address: 172.2.30.12
+
+    cup-side-milky-chance:
+        build:
+            context: .
+            dockerfile: cup-side-milky-chance.Dockerfile
+        container_name: cup-side-milky-chance
+        restart: unless-stopped
+        networks:
+            default:
+                ipv4_address: 172.2.30.13
+
+    cup-side-lola-weippert:
+        build:
+            context: .
+            dockerfile: cup-side-lola-weippert.Dockerfile
+        container_name: cup-side-lola-weippert
+        restart: unless-stopped
+        networks:
+            default:
+                ipv4_address: 172.2.30.14
+
+    cup-side-gentleman:
+        build:
+            context: .
+            dockerfile: cup-side-gentleman.Dockerfile
+        container_name: cup-side-gentleman
+        restart: unless-stopped
+        networks:
+            default:
+                ipv4_address: 172.2.30.15
+
+    cup-side-kelvyn-colt:
+        build:
+            context: .
+            dockerfile: cup-side-kelvyn-colt.Dockerfile
+        container_name: cup-side-kelvyn-colt
+        restart: unless-stopped
+        networks:
+            default:
+                ipv4_address: 172.2.30.16
+
+    cup-side-majan:
+        build:
+            context: .
+            dockerfile: cup-side-majan.Dockerfile
+        container_name: cup-side-majan
+        restart: unless-stopped
+        networks:
+            default:
+                ipv4_address: 172.2.30.17
+
+    cup-side-megaloh:
+        build:
+            context: .
+            dockerfile: cup-side-megaloh.Dockerfile
+        container_name: cup-side-megaloh
+        restart: unless-stopped
+        networks:
+            default:
+                ipv4_address: 172.2.30.18
+
+    cup-side-sara-lugo:
+        build:
+            context: .
+            dockerfile: cup-side-sara-lugo.Dockerfile
+        container_name: cup-side-sara-lugo
+        restart: unless-stopped
+        networks:
+            default:
+                ipv4_address: 172.2.30.19
+
+    cup-side-seeed:
+        build:
+            context: .
+            dockerfile: cup-side-seeed.Dockerfile
+        container_name: cup-side-seeed
+        restart: unless-stopped
+        networks:
+            default:
+                ipv4_address: 172.2.30.20
+
     cup-side-default-ch:
         build:
             context: .
@@ -57,6 +219,7 @@ services:
         networks:
             default:
                 ipv4_address: 172.2.35.2
+
     cup-side-oberrieden:
         build:
             context: .
@@ -67,7 +230,25 @@ services:
             default:
                 ipv4_address: 172.2.35.3
 
+    cup-side-bsides:
+        build:
+            context: .
+            dockerfile: cup-side-bsides.Dockerfile
+        container_name: cup-side-bsides
+        restart: unless-stopped
+        networks:
+            default:
+                ipv4_address: 172.2.35.4
 
+    cup-side-oasg:
+        build:
+            context: .
+            dockerfile: cup-side-oasg.Dockerfile
+        container_name: cup-side-oasg
+        restart: unless-stopped
+        networks:
+            default:
+                ipv4_address: 172.2.35.5
 networks:
     default:
         external:
